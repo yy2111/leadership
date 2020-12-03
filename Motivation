@@ -1,0 +1,54 @@
+Version 1: Leadership in online software development environment
+
+Possible research Questions:
+1.	What constitutes leadership in a virtual environment (leadership can be a temporary positioning rather than a stable role)?
+a.	How is leadership demonstrated in virtual environment?
+i.	Setting directions (Leading/shaping technical solutions)?
+ii.	Identifying/Resolving technical risk
+iii.	Refocus conversations?
+iv.	Obtaining commitment? Commitment in open source community is challenging, and for simplicity, maybe drop this
+v.	Establish good environment (mainly virtual working environment) 
+b.	How is leadership measured in virtual environment?
+i.	relative contribution of different types of power: expertise, structural, prestige power, etc. to leader emergence
+c.	How is the influence of leadership measured in virtual environment? 
+i.	Software development processes: productivity
+ii.	Virtual teams: diversity, stability, growth, etc.
+iii.	Software product: novelty/quality
+
+2.	How do people emerge as leaders in an issue/task/community?
+3.	What role does diversity play in virtual teams? Does the virtual software development environment eliminate any racial/gender biases or does it perpetuate them? 
+
+Variables:
+•	Longitudinal variables related to different power bases 
+•	Individual leadership potential 
+•	IV/DV: rating given by the system based on activities completed
+•	DV: productivity/health of team, novelty/quality of the software product,
+
+
+Version 2: 
+Hi Sara,
+
+Based on today’s discussion, I suggest that you may focus on the following two tasks, while supporting Prof. Zheng’s team in verifying the leadership coding:
+
+1)	Analyzing and classifying formal roles used in open source projects.
+Many projects follow a similar structure for contributor roles and recognition. What these roles actually mean, though, is entirely up to the particular project. We can use an example list of formal roles commonly recognized in open source projects, and start to analyze data associated with these roles in Blockchain project.
+
+a)	Maintainers: if any, should be explicitly listed in README file. Otherwise, assume no.
+b)	Code Contributors: you can code to iteratively navigate through all files in a project, and accumulate a set of contributors associated with each file (as we saw the list of contributors on GitHub today). 
+c)	Issue Contributors: Anyone that’s included in our issue dataset as commenters. More specifically, you should be able to find ways to differentiate the following subsets:
+a.	Issue reporter: Anyone that has reported an issue;
+b.	Issue resolver: Anyone that has contributed a solution to resolve the issue, typically by submitting a new pull request (e.g. issue ID is typically embedded in the title of the corresponding pull request);
+c.	Issue closer: anyone that verifies the issue resolution and claims the closure of an issue.
+d)	Pull Request contributors: this role is a subset of b), and is highly coupling with the c). This is why I want to get this separately counted. Specifically, it should include:
+a.	Requester: Anyone that has initiated a pull request;
+b.	Reviewers: Anyone that has approved and merged a pull request; We may need to identify these people from a different tab than “issues” on GitHub, which is “Pull requests”. As an example: https://github.com/emberjs/ember.js/pull/19001, while chriskrycho contributed by making a pull-request  
+
+Hopefully, the above provides you some initial ideas and heuristics to write code to extract new contributor and pull request data from Blockchain Github repo. Let me know if any more discussion or clarification is needed.
+
+2)	More open source project data collection. Besides Blockchain, I suggest we also consider the following active open source projects to collect their issue data. 
+a)	Homebrew: https://github.com/Homebrew 
+b)	Atom: https://github.com/atom/atom 
+c)	Roslyn: https://github.com/dotnet/roslyn
+d)	ember: https://github.com/emberjs/ember.js
+
+
